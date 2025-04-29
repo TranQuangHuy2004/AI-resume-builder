@@ -7,7 +7,7 @@ function ShareButton({ resumeId, resumeInfo }) {
                 await navigator.share({
                     title: `${resumeInfo?.firstName} ${resumeInfo?.lastName} resume`,
                     text: "Hello Everyone, This is my resume please open url to see it",
-                    url: import.meta.env.VITE_BASE_URL + "/my-resume/" + resumeId + "/view",
+                    url: "https://ai-rb.onrender.com/my-resume/" + resumeId + "/view",
                 });
                 console.log(import.meta.env.VITE_BASE_URL + "/my-resume/" + resumeId + "/view");
                 console.log("shared successfully!");
